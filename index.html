@@ -7,13 +7,57 @@
     <link rel="stylesheet" href="src/output.css" />
     <link rel="stylesheet" href="src/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
   </head>
   <body class="relative min-h-[100vh]">
-    <div class="flex flex-col overflow-x-hidden">
+    <div class="flex flex-col overflow-x-hidden overscroll-none">
       <header>
         <nav>
+
+          <!-- mobile navbar -->
+          <div  class="z-20  fixed md:hidden flex w-dvw justify-between">
+            <div id="mobilenavbar"  class="hidden absolute bg-[#7878786d] backdrop-blur-md z-[21] w-full h-[250px] ">
+              <div class="flex justify-center pt-5">
+                <div class="flex flex-col w-full items-center px-20 gap-5">
+                  <a href="#" class="text-xl">Navigation Bar</a>
+                  <div class="h-[1px] bg-white w-full"></div>
+
+                  <ul class="flex items-center flex-col gap-5">
+                    <li><a href="#about">Discover</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#ai">AIs</a></li>
+                  </ul>
+                  
+                </div>
+                
+                
+              </div>
+              </div>
+
+            
+              <div
+              class=" ml-10 mt-5 flex flex-row bg-[#7878786d] backdrop-blur-md rounded-lg justify-center"
+            >
+              <a href="#"
+                ><img src="images/PSHT LOGO.png" width="50" alt="" srcset=""
+              /></a>
+            </div>
+            
+            
+
+            <div id="burger" class="mr-10 z-30 mt-5 cursor-pointer flex flex-col gap-1.5 bg-[#7878781a] backdrop-blur-md rounded-lg justify-center items-center w-[50px] h-[50px] transform transition-transform duration-300">
+              <div id="line1" class="w-[30px] h-[2px] bg-black transform transition-transform duration-300"></div>
+              <div id="line2" class="w-[30px] h-[2px] bg-black transform transition-opacity duration-300"></div>
+              <div id="line3" class="w-[30px] h-[2px] bg-black transform transition-transform duration-300"></div>
+            </div>
+            
+
+          </div>
+
+          
+
           <div
-            class="hidden md:fixed gap-5 md:w-dvw md:flex md:justify-center pt-5 z-20 transition-colors duration-300"
+            class="transition-colors hidden md:fixed gap-5 md:w-dvw md:flex md:justify-center pt-5 z-20 duration-300"
           >
             <div
               class="flex flex-row bg-[#7878781a] backdrop-blur-md rounded-lg justify-center"
@@ -44,7 +88,7 @@
           </h1>
           <div>
             <button
-              class="border-2 border-blue-500 rounded-full px-1.5 py-1 md:px-2 md:py-1"
+              class=" border-2 border-blue-500 rounded-full px-1.5 py-1 md:px-2 md:py-1"
             >
               <a
                 href="#about"
@@ -94,7 +138,7 @@
 
           <section
             id="overview"
-            class="flex-col flex px-20 py-32 bg-[#161719] gap-32"
+            class="flex-col flex px-10 md:px-20 py-32 bg-[#161719] gap-32"
           >
             <div class="flex justify-center">
               <div class="flex flex-col">
@@ -220,69 +264,109 @@
             </div>
           </section>
 
-          <section id="ai" class="h-[650px]  bg-white">
-            <div class="flex items-center flex-col pt-12">
-              <div class="flex flex-col gap-3 items-center">
+          <section id="ai" class="bg-white">
+            <div class="flex items-center justify-around h-full flex-col py-12 ">
+              <div class="flex flex-col gap-3 items-center pb-32">
                 <div class="w-[10px] bg-black h-[10px]"></div>
-                <h1 class="text-sm ">
-                  Meet the <span class="text-blue-500">AIs</span> who changed the world.
+                <h1 class="text-sm" data-aos="fade-up" data-aos-delay="600">
+                  Meet the <span class="text-blue-500">AIs</span> <span data-aos="fade-up" data-aos-delay="800">who changed the world.</span> 
                 </h1>
               </div>
               
+              <div class="flex flex-col  md:flex-row md:w-full md:justify-around md:gap-0 gap-28"> 
+                <div class="flex gap-5 h-[280px]">
+                  <div>
+                    <h1 class="text-blue-500 font-light">
+                      0.1
+                    </h1>
+                  </div>
+
+                  <div class="flex flex-col gap-3 w-[250px] justify-between">
+                    <h1>Global Forest Watch</h1>
+                    <h1 class="text-sm">
+                      GFW uses satellite imagery and machine learning algorithms to monitor forests in real-time. It provides data on deforestation,
+                      land use changes, and illegal logging activities. The platform alerts governments and NGOs to illegal activities, helping to improve
+                      forest conservation efforts.
+                      </h1>
+                    <button
+              class="border-2 border-blue-500 rounded-full px-1.5 py-1"
+            >
+              <a target="_blank"
+                href="https://www.globalforestwatch.org/"
+                class="text-sm text-blue-500 font-medium"
+                >Visit Them Now</a
+              >
+            </button>
+                  </div>
+                  
+                </div>
+
+                <div class="flex gap-5 h-[280px]">
+                  <div>
+                    <h1 class="text-blue-500 font-light">
+                      0.2
+                    </h1>
+                  </div>
+
+                  <div class="flex flex-col gap-3 w-[250px] justify-between">
+                    <h1>IBM's Weather Company</h1>
+                    <h1 class="text-sm">
+                      IBM's Weather Company uses AI and machine learning to analyze weather patterns and historical data to improve disaster prediction and response.
+                      Their models help forecast natural disasters like hurricanes and floods,
+                      providing real-time alerts to authorities and communities to enhance preparedness and reduce damage.
+                      </h1>
+                    <button
+              class="border-2  border-blue-500 rounded-full px-1.5 py-1"
+            >
+              <a target="_blank"
+                href="https://www.ibm.com/products/environmental-intelligence-suite?utm_content=SRCWW&p1=Search&p4=43700077015058007&p5=p&p9=58700008460401385&gclid=Cj0KCQjwo8S3BhDeARIsAFRmkOPQQti833AjsJ_Sy0PAA44YUuJ4pxql3rseg9wSJKRLc6SGwePYkOsaAkh4EALw_wcB&gclsrc=aw.ds"
+                class="text-sm text-blue-500 font-medium"
+                >Visit Them Now</a
+              >
+            </button>
+                  </div>
+                  
+                </div>
+
+                <div class="flex gap-5 h-[280px]">
+                  <div>
+                    <h1 class="text-blue-500 font-light">
+                      0.3
+                    </h1>
+                  </div>
+
+                  <div class="flex flex-col gap-3 w-[250px] justify-between">
+                    <h1>Wildlife Insights</h1>
+                    <h1 class="text-sm">
+                      Wildlife Insights uses AI to analyze images from camera traps and drones to monitor wildlife populations.
+                       The platform identifies animal species and tracks their movements,
+                        providing critical data for conservationists to make informed decisions about protecting endangered species.
+                      </h1>
+                    <button
+              class="border-2  border-blue-500 rounded-full px-1.5 py-1"
+            >
+              <a target="_blank"
+                href="https://www.wildlifeinsights.org/"
+                class="text-sm text-blue-500 font-medium"
+                >Visit Them Now</a
+              >
+            </button>
+                  </div>
+                  
+                </div>
+              </div>
             </div>
           </section>
         </div>
       </main>
     
-      <footer class="absolute bottom-0 w-full h-10">test</footer>
+      <footer class="absolute bottom-0 w-full h-10 ">
+        
+      </footer>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="aos.js"></script>
-    <script>
-      if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
-    window.onmousewheel = document.onmousewheel = wheel;
-    
-    function wheel(event) {
-        var delta = 0;
-        if (event.wheelDelta) delta = event.wheelDelta / 40; //controls the scroll wheel range/speed
-        else if (event.detail) delta = -event.detail / 40;
-    
-        handle(delta);
-        if (event.preventDefault) event.preventDefault();
-        event.returnValue = false;
-    }
-    
-    var goUp = true;
-    var end = null;
-    var interval = null;
-    
-    function handle(delta) {
-    var animationInterval = 10; //controls the scroll animation after scroll is done
-      var scrollSpeed = 10; //controls the scroll animation after scroll is done
-    
-    if (end == null) {
-      end = $(window).scrollTop();
-      }
-      end -= 20 * delta;
-      goUp = delta > 0;
-    
-      if (interval == null) {
-        interval = setInterval(function () {
-          var scrollTop = $(window).scrollTop();
-          var step = Math.round((end - scrollTop) / scrollSpeed);
-          if (scrollTop <= 0 || 
-              scrollTop >= $(window).prop("scrollHeight") - $(window).height() ||
-              goUp && step > -1 || 
-              !goUp && step < 1 ) {
-            clearInterval(interval);
-            interval = null;
-            end = null;
-          }
-          $(window).scrollTop(scrollTop + step );
-        }, animationInterval);
-      }
-    }
-    </script> 
+    <script src="main.js"></script>
   </body>
 </html>
