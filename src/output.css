@@ -600,10 +600,6 @@ video {
   position: relative;
 }
 
-.bottom-1 {
-  bottom: 0.25rem;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -705,16 +701,12 @@ video {
   height: 100%;
 }
 
-.h-\[200px\] {
-  height: 200px;
-}
-
-.h-\[200pxZ\] {
-  height: 200pxZ;
-}
-
 .min-h-\[100vh\] {
   min-height: 100vh;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .w-\[10px\] {
@@ -743,18 +735,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[100\] {
-  width: 100;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[100px\] {
-  width: 100px;
 }
 
 .flex-grow {
@@ -896,6 +876,10 @@ video {
      object-fit: contain;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .px-1\.5 {
   padding-left: 0.375rem;
   padding-right: 0.375rem;
@@ -966,44 +950,40 @@ video {
   padding-bottom: 8rem;
 }
 
+.pb-\[344px\] {
+  padding-bottom: 344px;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
 
-.pb-\[244px\] {
-  padding-bottom: 244px;
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
-.pb-\[300px\] {
-  padding-bottom: 300px;
+.pl-5 {
+  padding-left: 1.25rem;
 }
 
-.pb-\[800px\] {
-  padding-bottom: 800px;
+.pl-10 {
+  padding-left: 2.5rem;
 }
 
-.pb-\[700px\] {
-  padding-bottom: 700px;
+.pt-4 {
+  padding-top: 1rem;
 }
 
-.pb-\[600px\] {
-  padding-bottom: 600px;
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
-.pb-\[500px\] {
-  padding-bottom: 500px;
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
-.pb-\[00px\] {
-  padding-bottom: 00px;
-}
-
-.pb-\[400px\] {
-  padding-bottom: 400px;
-}
-
-.pb-\[344px\] {
-  padding-bottom: 344px;
+.pt-2 {
+  padding-top: 0.5rem;
 }
 
 .text-center {
@@ -1147,6 +1127,10 @@ video {
     height: 500px;
   }
 
+  .md\:w-\[200px\] {
+    width: 200px;
+  }
+
   .md\:w-\[400px\] {
     width: 400px;
   }
@@ -1161,10 +1145,6 @@ video {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-\[200px\] {
-    width: 200px;
   }
 
   .md\:basis-\[400px\] {
@@ -1228,18 +1208,6 @@ video {
 
   .md\:pl-32 {
     padding-left: 8rem;
-  }
-
-  .md\:pb-\[244px\] {
-    padding-bottom: 244px;
-  }
-
-  .md\:pb-\[344px\] {
-    padding-bottom: 344px;
-  }
-
-  .md\:pb-\[300px\] {
-    padding-bottom: 300px;
   }
 
   .md\:text-2xl {
