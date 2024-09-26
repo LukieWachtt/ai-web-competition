@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   burger.addEventListener("click", function() {
     isMenuOpen = !isMenuOpen;
-    mobileNavbar.classList.toggle("hidden");
+    mobileNavbar.classList.toggle("translate-y-0");
 
     if (isMenuOpen) {
       // Rotate and hide the lines for a cross
