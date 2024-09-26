@@ -1051,6 +1051,10 @@ video {
   padding-top: 1.25rem;
 }
 
+.pb-7 {
+  padding-bottom: 1.75rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1333,12 +1337,21 @@ video {
     padding-bottom: 0.25rem;
   }
 
+  .md\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
   .md\:pb-0 {
     padding-bottom: 0px;
   }
 
   .md\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .md\:pb-7 {
+    padding-bottom: 1.75rem;
   }
 
   .md\:text-2xl {
